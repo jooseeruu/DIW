@@ -1,4 +1,6 @@
 import '../sass/application.scss';
+import $ from './jquery-2.1.0.min.js';
+
 var names = ['Tiger', 'Samuel', 'Leeloo',
              'Bella', 'Mo', 'Sly',
              'Beezy', 'Maple', 'Rodney',

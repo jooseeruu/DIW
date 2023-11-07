@@ -33,6 +33,17 @@ module.exports = {
         //para procesar los archivos .css
         use: ['style-loader', 'css-loader'],
       },
+      {
+        // Busca archivos de imagen
+        test: /\.(png|jpe?g|gif)$/i,
+        
+        //para procesar los archivos de imagen
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   
