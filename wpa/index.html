@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Computer school</title>
+</head>
+<body>
+  <link rel="manifest" href="/wpa/manifest.json">
+    <header>
+        <div>
+          <img src="imatges/logo.png" alt=""/>
+        </div>
+        <div id="title">
+          <h1>Computer School</h1>
+        </div>
+        <div id="subtit">
+          <p>Best computer school ever!</p>
+        </div>
+      </header>
+      <nav class="menu">
+        <ul>
+          <li><a href="">Link 1</a></li>
+          <li><a href="">Link 2</a></li>
+          <li><a href="">Link 3</a></li>
+          <li><a href="">Link 4</a></li>
+        </ul>
+      </nav>
+      <section>
+        <article id="pattern">
+        </article>
+        <article id="frontal">
+          <img src="imatges/fotofrontal.jpg" alt="Central Image" />
+        </article>
+        <article class="notas">
+  
+          <div id="tit">
+            <h1>The Grades</h1>
+          </div>
+            <table>
+              <tr>
+                <th>Nom</th>
+                <th>NIF</th>
+                <th>Nota</th>
+              </tr>
+              <tr>
+                <td>Maria</td>
+                <td>1</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Joan</td>
+                <td>2</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Lluis</td>
+                <td>3</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Pepa</td>
+                <td>4</td>
+                <td>10</td>
+              </tr>
+            </table>
+          </article>
+       </section>
+      <div class="imagenes">
+        <div>
+            <img src="imatges/javascript.png" alt="javascript">
+            <div class="nombres">Javascript</div>
+        </div>
+        <div>
+            <img src="imatges/angular.png" alt="ANGULAR">
+            <div class="nombres">ANGULAR</div>
+        </div>
+        <div>
+            <img src="imatges/php.png" alt="PHP">
+            <div class="nombres">PHP</div>
+        </div>
+        <div>
+            <img src="imatges/html5.png" alt="HTML5">
+            <div class="nombres">HTML5</div>
+        </div>
+    </div>
+      <footer>
+        <p id="pie1">@cifpfbmoll.eu</p>
+        <p id="pie2">DESIGN OF WEB INTRFACES</p>
+      </footer>
+
+  <!-- In index.html, for example: -->
+<script>
+  // Don't register the service worker
+  // until the page has fully loaded
+  window.addEventListener('load', () => {
+    // Is service worker available?
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js').then(() => {
+        console.log('Service worker registered!');
+      }).catch((error) => {
+        console.warn('Error registering service worker:');
+        console.warn(error);
+      });
+    }
+  });
+</script>
+</body>
+</html>
