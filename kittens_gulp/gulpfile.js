@@ -1,5 +1,6 @@
 // Importo los módulos de gulp
-import { series, src, dest, watch } from 'gulp';
+const gulp = require('gulp');
+const { series, src, dest, watch } = gulp;
 const sass = require('gulp-sass')(require('sass'));
 const minCSS = require('gulp-clean-css');
 const minJS = require('gulp-uglify');
