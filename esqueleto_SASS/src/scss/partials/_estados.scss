@@ -1,0 +1,36 @@
+$colors: (
+  success: #2ecc72,
+  warning: #f1c40f,
+  error: #e74c3c,
+  normal: #333333
+);
+
+$font-size-h1: 2em;
+$estados: success, warning, error, normal;
+
+@function ajustar-color($color, $porcentaje, $claro) {
+  @return mix(if($claro, white, black), $color, $porcentaje);
+}
+
+@mixin estado($color, $porcentaje, $claro) {
+  color: $color;
+  background-color: ajustar-color($color, $porcentaje, $claro);
+}
+
+p {
+  text-align: justify;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: $font-size-h1 - ($i - 1) * 0.2em;
+  }
+}
+
+@each $estado in $estados {
+  $porcentaje: if($estado == 'normal', 50%, 25%);
+  $claro: if($estado == 'normal', true, false);
+  .#{$estado} {
+    @include estado(map-get($colors, $estado), $porcentaje, $claro);
+  }
+}

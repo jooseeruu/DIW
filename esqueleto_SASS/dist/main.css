@@ -1,0 +1,47 @@
+p {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+.success {
+  color: #2ecc72;
+  background-color: #239956;
+}
+
+.warning {
+  color: #f1c40f;
+  background-color: #b5930b;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #ad392d;
+}
+
+.normal {
+  color: #333333;
+  background-color: #999999;
+}
