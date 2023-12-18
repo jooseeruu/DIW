@@ -1,35 +1,43 @@
-$success_color:#2ecc72;
-$warning_color : #f1c40f;
-$error_color: #e74c3c;
-$normal_color: #333333;
+// Este archivo contiene variables y estilos para diferentes estados y elementos.
 
-.success{
-    color: $success_color;
-    background-color: darken($success_color,25%);
-}
-.warning{
-    color: $warning_color;
-    background-color: darken($warning_color,25%);
-}
-.error{
-    color: $error_color;
-    background-color: darken($error_color,25%);
+// Variables para colores de estado
+$success_color: #2ecc72; // Color para el estado de éxito
+$warning_color: #f1c40f; // Color para el estado de advertencia
+$error_color: #e74c3c; // Color para el estado de error
+$normal_color: #333333; // Color para el estado normal
+
+// Estilos para el estado de éxito
+.success {
+  color: $success_color;
+  background-color: darken($success_color, 25%);
 }
 
-p{
+// Estilos para el estado de advertencia
+.warning {
+  color: $warning_color;
+  background-color: darken($warning_color, 25%);
+}
+
+// Estilos para el estado de error
+.error {
+  color: $error_color;
+  background-color: darken($error_color, 25%);
+}
+
+// Estilos para párrafos
+p {
+  color: $normal_color;
+  text-align: justify;
+  background-color: lighten($normal_color, 50%);
+}
+
+// Estilos para encabezados
+$font_size: 2em;
+@for $i from 1 through 6 {
+  h#{$i} {
     color: $normal_color;
-    text-align: justify;
-    background-color: lighten($normal_color,50%);
-}
-
-
-$font_size:2em;
-@for $i from 1 through 6{
-    
-    h#{$i}{
-        color: $normal_color;
-        font-size: $font_size;
-        background-color: lighten($normal_color,50%);
-    }
-    $font_size:$font_size - 0.2;
+    font-size: $font_size;
+    background-color: lighten($normal_color, 50%);
+  }
+  $font_size: $font_size - 0.2;
 }

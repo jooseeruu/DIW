@@ -1,19 +1,21 @@
-
+// Se define una lista de colores del 0 al 100 en pasos de 10
 $colors: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
-
+// Se recorre la lista de colores y se multiplica por 1% para obtener el valor en porcentaje
 @each $red in $colors {
   $red1: ($red * 1%);
   @each $green in $colors {
     $green1: ($green * 1%);
     @each $blue in $colors {
       $blue1: ($blue * 1%);
-
+      // Se crean nombres de clase para cada color
       $class: "color-#{$red}-#{$green}-#{$blue}";
       $class-bg: "colorbg-#{$red}-#{$green}-#{$blue}";
 
+      // Definimos las propiedades de color para cada clase
       .#{$class} {
         color: rgb($red1, $green1, $blue1);
       }
+      // Definimos las propiedades de color de fondo para cada clase
       .#{$class-bg} {
         background-color: rgb($red1, $green1, $blue1);
       }
