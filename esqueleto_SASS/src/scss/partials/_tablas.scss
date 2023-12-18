@@ -1,0 +1,10 @@
+// Hacemos que se cumplan los requisitos del ejercicio
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+
+    th, td {
+        border: 1px solid black;
+    }
+}
