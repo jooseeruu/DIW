@@ -1,0 +1,22 @@
+
+$colors: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+@each $red in $colors {
+  $red1: ($red * 1%);
+  @each $green in $colors {
+    $green1: ($green * 1%);
+    @each $blue in $colors {
+      $blue1: ($blue * 1%);
+
+      $class: "color-#{$red}-#{$green}-#{$blue}";
+      $class-bg: "colorbg-#{$red}-#{$green}-#{$blue}";
+
+      .#{$class} {
+        color: rgb($red1, $green1, $blue1);
+      }
+      .#{$class-bg} {
+        background-color: rgb($red1, $green1, $blue1);
+      }
+    }
+  }
+}

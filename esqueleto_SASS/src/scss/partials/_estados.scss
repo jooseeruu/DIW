@@ -1,36 +1,35 @@
-$colors: (
-  success: #2ecc72,
-  warning: #f1c40f,
-  error: #e74c3c,
-  normal: #333333
-);
+$success_color:#2ecc72;
+$warning_color : #f1c40f;
+$error_color: #e74c3c;
+$normal_color: #333333;
 
-$font-size-h1: 2em;
-$estados: success, warning, error, normal;
-
-@function ajustar-color($color, $porcentaje, $claro) {
-  @return mix(if($claro, white, black), $color, $porcentaje);
+.success{
+    color: $success_color;
+    background-color: darken($success_color,25%);
+}
+.warning{
+    color: $warning_color;
+    background-color: darken($warning_color,25%);
+}
+.error{
+    color: $error_color;
+    background-color: darken($error_color,25%);
 }
 
-@mixin estado($color, $porcentaje, $claro) {
-  color: $color;
-  background-color: ajustar-color($color, $porcentaje, $claro);
+p{
+    color: $normal_color;
+    text-align: justify;
+    background-color: lighten($normal_color,50%);
 }
 
-p {
-  text-align: justify;
-}
 
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-size: $font-size-h1 - ($i - 1) * 0.2em;
-  }
-}
-
-@each $estado in $estados {
-  $porcentaje: if($estado == 'normal', 50%, 25%);
-  $claro: if($estado == 'normal', true, false);
-  .#{$estado} {
-    @include estado(map-get($colors, $estado), $porcentaje, $claro);
-  }
+$font_size:2em;
+@for $i from 1 through 6{
+    
+    h#{$i}{
+        color: $normal_color;
+        font-size: $font_size;
+        background-color: lighten($normal_color,50%);
+    }
+    $font_size:$font_size - 0.2;
 }
