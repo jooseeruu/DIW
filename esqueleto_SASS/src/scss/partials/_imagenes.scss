@@ -1,48 +1,16 @@
-@import './mixins';
-
+@import "./mixins";
+//Estilos para las imagenes
 img {
-    width: 300px;
-    border-radius: 45%;
+  width: 300px;
+  border-radius: 45%;
 }
-
-img.grayscale,
-img.sepia,
-img.blur,
-img.hue-rotate,
-img.invert,
-img.brightness,
-img.contrast {
-    transition: all 3s ease-in-out;
-}
-
-img.grayscale {
-    filter: grayscale(100%);
-}
-
-img.sepia {
-    filter: sepia(100%);
-}
-
-img.blur {
-    filter: blur(5px);
-}
-
-img.hue-rotate {
-    filter: hue-rotate(150deg);
-}
-
-img.invert {
-    filter: invert(0.8);
-}
-
-img.brightness {
-    filter: brightness(0.5);
-}
-
-img.contrast {
-    filter: contrast(2);
-}
-
-img:hover {
-    filter: none;
-}
+//Animaciones con los parametros que se requieren
+img {
+    @include animation(grayscale, 0%, 100%);
+    @include animation(sepia, 0%, 100%);
+    @include animation(blur, "0px", "5px");
+    @include animation(hue-rotate, "0deg", "150deg");
+    @include animation(invert, 0, 0.8);
+    @include animation(brightness, 1, 0.5);
+    @include animation(contrast, 0, 2);
+  }

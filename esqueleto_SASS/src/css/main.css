@@ -10729,49 +10729,199 @@ table th, table td {
   border: 1px solid black;
 }
 
+/*
+    Me da 2 warnings debido a que prefiere que use @keyframes en vez de @-webkit-keyframes y @-moz-keyframes
+    y abajo lo mismo con @animation
+*/
 img {
   width: 300px;
   border-radius: 45%;
 }
 
-img.grayscale,
-img.sepia,
-img.blur,
-img.hue-rotate,
-img.invert,
-img.brightness,
-img.contrast {
-  transition: all 3s ease-in-out;
+@-webkit-keyframes grayscale {
+  0% {
+    filter: grayscale(0%);
+  }
+  50% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
 }
-
+@-moz-keyframes grayscale {
+  0% {
+    filter: grayscale(0%);
+  }
+  50% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
 img.grayscale {
-  filter: grayscale(100%);
+  -webkit-animation: grayscale 3s infinite;
+  -moz-animation: grayscale 3s infinite;
 }
-
+@-webkit-keyframes sepia {
+  0% {
+    filter: sepia(0%);
+  }
+  50% {
+    filter: sepia(100%);
+  }
+  100% {
+    filter: sepia(0%);
+  }
+}
+@-moz-keyframes sepia {
+  0% {
+    filter: sepia(0%);
+  }
+  50% {
+    filter: sepia(100%);
+  }
+  100% {
+    filter: sepia(0%);
+  }
+}
 img.sepia {
-  filter: sepia(100%);
+  -webkit-animation: sepia 3s infinite;
+  -moz-animation: sepia 3s infinite;
 }
-
+@-webkit-keyframes blur {
+  0% {
+    filter: blur("0px");
+  }
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur("0px");
+  }
+}
+@-moz-keyframes blur {
+  0% {
+    filter: blur("0px");
+  }
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur("0px");
+  }
+}
 img.blur {
-  filter: blur(5px);
+  -webkit-animation: blur 3s infinite;
+  -moz-animation: blur 3s infinite;
 }
-
+@-webkit-keyframes hue-rotate {
+  0% {
+    filter: hue-rotate("0deg");
+  }
+  50% {
+    filter: hue-rotate(150deg);
+  }
+  100% {
+    filter: hue-rotate("0deg");
+  }
+}
+@-moz-keyframes hue-rotate {
+  0% {
+    filter: hue-rotate("0deg");
+  }
+  50% {
+    filter: hue-rotate(150deg);
+  }
+  100% {
+    filter: hue-rotate("0deg");
+  }
+}
 img.hue-rotate {
-  filter: hue-rotate(150deg);
+  -webkit-animation: hue-rotate 3s infinite;
+  -moz-animation: hue-rotate 3s infinite;
 }
-
+@-webkit-keyframes invert {
+  0% {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(0.8);
+  }
+  100% {
+    filter: invert(0);
+  }
+}
+@-moz-keyframes invert {
+  0% {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(0.8);
+  }
+  100% {
+    filter: invert(0);
+  }
+}
 img.invert {
-  filter: invert(0.8);
+  -webkit-animation: invert 3s infinite;
+  -moz-animation: invert 3s infinite;
 }
-
+@-webkit-keyframes brightness {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(0.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+@-moz-keyframes brightness {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(0.5);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
 img.brightness {
-  filter: brightness(0.5);
+  -webkit-animation: brightness 3s infinite;
+  -moz-animation: brightness 3s infinite;
 }
-
+@-webkit-keyframes contrast {
+  0% {
+    filter: contrast(0);
+  }
+  50% {
+    filter: contrast(2);
+  }
+  100% {
+    filter: contrast(0);
+  }
+}
+@-moz-keyframes contrast {
+  0% {
+    filter: contrast(0);
+  }
+  50% {
+    filter: contrast(2);
+  }
+  100% {
+    filter: contrast(0);
+  }
+}
 img.contrast {
-  filter: contrast(2);
+  -webkit-animation: contrast 3s infinite;
+  -moz-animation: contrast 3s infinite;
 }
 
-img:hover {
-  filter: none;
-}
+/*
+    Me da 2 warnings debido a que prefiere que use @keyframes en vez de @-webkit-keyframes y @-moz-keyframes
+    y abajo lo mismo con @animation
+*/

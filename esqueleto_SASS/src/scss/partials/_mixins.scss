@@ -1,6 +1,22 @@
+/*
+    Me da 2 warnings debido a que prefiere que use @keyframes en vez de @-webkit-keyframes y @-moz-keyframes
+    y abajo lo mismo con @animation
+*/
+@mixin animation($property, $value-start, $value-end) {
+    @-webkit-keyframes #{$property} {
+        0% { filter: #{$property}($value-start); }
+        50% { filter: #{$property}(#{$value-end}); }
+        100% { filter: #{$property}($value-start); }
+    }
 
-@mixin filter ($property, $value) {
-    -webkit-#{$property}: $value;
-    -moz-#{$property}: $value;
-    #{$property}: $value;
-}
+    @-moz-keyframes #{$property} {
+        0% { filter: #{$property}($value-start); }
+        50% { filter: #{$property}(#{$value-end}); }
+        100% { filter: #{$property}($value-start); }
+    }
+
+    &.#{$property} {
+        -webkit-animation: #{$property} 3s infinite;
+        -moz-animation: #{$property} 3s infinite;
+    }
+} 
