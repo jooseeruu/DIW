@@ -1,0 +1,8 @@
+$base-color: #036;
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    float: left;
+    width: 8.33333333333% * $i;
+  }
+}
