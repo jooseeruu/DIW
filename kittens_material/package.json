@@ -1,7 +1,6 @@
 {
   "name": "kittens_esquelet",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open --mode development",
@@ -17,7 +16,14 @@
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "description": "",
+  "dependencies": {
+    "@material/tab-bar": "^14.0.0",
+    "@material/top-app-bar": "^14.0.0",
+    "material-components-web": "^14.0.0"
   }
 }

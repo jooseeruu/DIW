@@ -8,22 +8,68 @@
 
     <link rel="stylesheet" href="dist/css/application.css">
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic|Ribeye+Marrow' rel='stylesheet' type='text/css'>
-    <script src="js/modernizer-2.5.2.min.js"></script>
+    <!--<script src="js/modernizer-2.5.2.min.js"></script>-->
     
   </head>
   <body>
-    <header class="header">
-      <div class="wrapper clearfix">
-        <nav class="navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="kittens.html">Kittens</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <h1>Kittens "R" Us</h1>
+    <header>
+      <div class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section class="mdc-top-app-bar_section mdc-top-app-bar_section--align-start">          
+            <h1 class="mdc-top-app-bar__title">Kittens "R" Us</h1>
+          </section>
+        </div>
       </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div>
+        <div class="mdc-tab-bar" role="tablist">
+          <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller__scroll-area">
+              <div class="mdc-tab-scroller__scroll-content">
+                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">Home</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator_content mdc-tab-indicator_content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">Kittens</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator_content mdc-tab-indicator_content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">About</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator_content mdc-tab-indicator_content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+                <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">Contact</span>
+                  </span>
+                  <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                    <span class="mdc-tab-indicator_content mdc-tab-indicator_content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
     </header>
 
     <div class="content">
@@ -152,8 +198,8 @@
         <div class="copy">&copy; 2014 Kittens "R" Us</div>
       </div>
     </footer>
-    <script src="dist/js/main.js"></script>
-    <script src="js/jquery-2.1.0.min.js"></script>
-    <script src="js/application.js"></script>
+    <script src="dist/js/all.js"></script>
+   <!-- <script src="dist/js/jquery-2.1.0.min.js"></script>-->
+    <!--<script src="js/application.js"></script>-->
   </body>
 </html>

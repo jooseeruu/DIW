@@ -1,6 +1,15 @@
 import '../sass/application.scss';
 import $ from './jquery-2.1.0.min.js';
 
+import {MDCTopAppBar} from '@material/top-app-bar';
+
+// Instantiation
+const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+const topAppBar = new MDCTopAppBar(topAppBarElement);
+
+import {MDCTabBar} from '@material/tab-bar';
+const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
+
 var names = ['Tiger', 'Samuel', 'Leeloo',
              'Bella', 'Mo', 'Sly',
              'Beezy', 'Maple', 'Rodney',
