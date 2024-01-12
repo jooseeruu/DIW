@@ -7,6 +7,7 @@
 @use "@material/layout-grid/mdc-layout-grid";
 @use "@material/card";
 @include card.core-styles;
+
 $blue:      #506f8e;
 $purple:    #aea4ad;
 $beige:     #d9d0cb;
@@ -26,58 +27,60 @@ $border-width:  10px;
 $border-radius: 20px;
 
 .mdc-tab-bar {
-    align-items: center;
-    display: block;
-    justify-content: center;}
-
+  align-items: center;
+  display: block;
+  justify-content: center;
+}
 
 .mdc-tab__text-label {
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-align: center;}
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
 
 .kittens {
-        overflow: auto;
-        list-style-type: none;
-        padding: 0;
-      
-        li {
-          border-radius: $border-radius;
-          float: left;
-          margin-bottom: 2em;
-          text-align: center;
-          width: $kitten-width;
-      
-        }
-      
-        img {
-          border: $border-width solid $white;
-          border-radius: $border-radius;
-        }
-      
-        label { font-weight: bold; }
-      }
+  overflow: auto;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    border-radius: $border-radius;
+    float: left;
+    margin-bottom: 2em;
+    text-align: center;
+    width: $kitten-width;
+  }
+
+  img {
+    border: $border-width solid $white;
+    border-radius: $border-radius;
+  }
+
+  label { 
+    font-weight: bold; 
+  }
+}
 
 .mdc-card {
-        margin: 16px;
+  margin: 16px;
 }
 
 label, small, h1 {
-    font-family: 'Didact Gothic', 'Ribeye Marrow', sans-serif;
+  font-family: 'Didact Gothic', 'Ribeye Marrow', sans-serif;
 }
+
 .mdc-layout-grid {
-    background-image: url("../img/background.png");
-  }
+  background-image: url("../img/background.png");
+}
 
 .mdc-card__actions {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
 
 .search {
-    float: right; 
+  float: right;
+}
 
-  }
-  
   
       
