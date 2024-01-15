@@ -1,15 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./main.css">
     <title>Bootstrap w/ Webpack</title>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Webpack!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-  </body>
+ </head>
+ <body>
+    <header class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand">My App</a>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="container mt-4">
+      <h1>Welcome to My App</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis urna sed elit
+        porttitor, eu convallis risus fringilla. Curabitur id cursus massa. Sed vulputate metus
+        nisi, id pretium lectus pulvinar at. Nulla facilisi. Quisque non ex odio. Nulla facilisi.
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container mt-4 text-center">
+      <p>&copy; 2022 My App. All rights reserved.</p>
+    </footer>
+ </body>
 </html>

@@ -12,7 +12,7 @@ module.exports = {
   },
   devServer: {
     static: path.resolve(__dirname, 'dist'),
-    port: 8085,
+    port: 8090,
     hot: true,
   },
   plugins: [
