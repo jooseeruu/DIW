@@ -36,8 +36,12 @@ module.exports = {
               }
             }
           },
-          "sass-loader" // compiles Sass to CSS
+          "sass-loader" // compiles Sass to CSS for use bootstrap icons
         ]
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
   }
