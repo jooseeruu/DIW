@@ -109,3 +109,6 @@ información.
 
 # Regla N1 Steve Krug --> No me hagas pensar
 # Relga N2 Steve Krug --> ¿Cómo puedo saber si funciona?
+
+## Medias objetivas para medir usabilidad
+    - Mapa de Color
