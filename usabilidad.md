@@ -112,3 +112,9 @@ información.
 
 ## Medias objetivas para medir usabilidad
     - Mapa de Color
+    - Ley de los 3 clicks: si el usuario no encuentra lo que quiere en 3 clicks se va (incrementa el bounce rate)
+        % bounce (rebotes): gente que abre la página no interactua y se va (Google Analytics)
+    - % links rotos (debería ser 0)
+    - Disponibilidad de la web > 99%
+    - Tiempo de permanencia en la página > 30s (Google Analytics)
+    - Número de errores de front end (aproxima a 0 mejor) 
